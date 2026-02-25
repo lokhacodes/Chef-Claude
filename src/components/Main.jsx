@@ -1,0 +1,16 @@
+export default function Main () {
+
+    return (
+        <main>
+            <form className="ingredient-form"> 
+              <input 
+              type= "text"
+              placeholder="e.g. oregano"
+              aria-label="Add ingredient"
+              />
+              <button type="submit">Add Ingredient </button>  
+            </form>
+        </main>
+    )
+
+}
