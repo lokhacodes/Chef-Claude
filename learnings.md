@@ -17,3 +17,23 @@ Whenver we don't really care about or need the old value, we simply want to set 
 3. When would you want to pass the second option (from answer
    above) to the state setter function?
 Whenver we do care about the previous value in state and need it to help us determine what the new value should be.
+
+
+## Conditional rendering 
+
+1. What is "conditional rendering"?
+
+when we want to only sometimes display on the page based on some kind of conditions
+
+2. When would you use &&?
+
+When you want to either display something or not display something
+
+3. When would you use a ternary?
+
+When you need to decide which of 2 things to display
+
+4. What if you need to decide between > 2 options on
+   what to display?
+
+if else switch 
