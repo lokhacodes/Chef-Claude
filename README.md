@@ -1,18 +1,62 @@
-# React + Vite
+# Chef-Claude 🧑‍🍳
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-19.2.0-brightgreen)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-7.3.1-orange)](https://vitejs.dev)
 
-Currently, two official plugins are available:
+## Description
+Chef-Claude is an interactive web application built with React and Vite. Users can add cooking ingredients to a dynamic list and, once they have 3 or more ingredients, unlock a personalized recipe recommendation (currently a hardcoded Beef Bolognese Pasta recipe tailored to common ingredients like pasta, ground beef, and tomato paste). The app features a clean UI with a globe icon header, accessible form inputs, and live updates.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![App Demo](image.png)
 
-## React Compiler
+## Features
+- **Dynamic Ingredient List**: Add ingredients via form; list updates live with `aria-live="polite"` for screen readers.
+- **Conditional Recipe Unlock**: "Get Recipe" button appears after 3+ ingredients.
+- **Recipe Display**: Toggles detailed recipe (ingredients, instructions) for Beef Bolognese Pasta.
+- **Responsive Design**: Uses Inter font, simple CSS styling.
+- **State Management**: React `useState` hooks for ingredients and recipe visibility.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Tech Stack
+- **Frontend**: React 19.2.0 (with React Compiler via Babel)
+- **Build Tool**: Vite 7.3.1
+- **Linting**: ESLint 9.39.1 (with React hooks/refresh plugins)
+- **Styling**: CSS (src/index.css), Google Fonts (Inter)
+- **Assets**: Local images (globe.png, react.svg)
 
-Note: This will impact Vite dev & build performances.
+## Installation
+1. Clone the repo or navigate to the project directory.
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Start development server:
+   ```
+   npm run dev
+   ```
+   Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Expanding the ESLint configuration
+## Usage
+1. Enter an ingredient (e.g., "oregano") and click "Add Ingredient".
+2. Watch the list grow.
+3. After 3+ ingredients, click "Get a recipe" to reveal Chef-Claude's Beef Bolognese recommendation.
+4. Toggle recipe visibility as needed.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Ingredients List](image-1.png)
+![Recipe](image-2.png)
+
+## Development Scripts
+- `npm run dev` - Start dev server with HMR.
+- `npm run build` - Build for production (`dist/` folder).
+- `npm run lint` - Lint code.
+- `npm run preview` - Preview production build.
+
+## Future Enhancements
+- Integrate real recipe API (e.g., Spoonacular) for dynamic recipes.
+- Persist ingredients (localStorage).
+- Add delete/edit ingredients.
+- More recipes based on ML/ingredients matching.
+
+## Learnings
+See [learnings.md](learnings.md) for development notes.
+
+## License
+MIT License - feel free to use and modify!
