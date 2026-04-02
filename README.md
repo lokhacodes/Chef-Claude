@@ -57,6 +57,11 @@ Chef-Claude is an interactive web application built with React and Vite. Users c
 
 ## Learnings
 See [learnings.md](learnings.md) for development notes.
+- Event Listners
+- State
+- Conditional rendering
+- Forms
+- State Management Strategies
 
 ## License
 MIT License - feel free to use and modify!
