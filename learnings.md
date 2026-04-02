@@ -37,3 +37,27 @@ When you need to decide which of 2 things to display
    what to display?
 
 if else switch 
+
+Make sure .env is in your .gitignore to avoid committing sensitive data
+
+
+/**
+ * Challenge: Get a recipe from the AI!
+ * 
+ * This will be a bit harder of a challenge that will require you
+ * to think critically and synthesize the skills you've been
+ * learning and practicing up to this point.
+ * 
+ * We'll start with a mini-quiz:
+ * 
+ * 1. Think about where the recipe response should live and how you're
+ *    going to make sure it doesn't disappear between each state change  in
+ *    the app. (I don't mean between refreshes of your mini-browser.
+ *    You don't need to save this to localStorage or anything more permanent
+ *    than in React's memory for now.)
+ *  
+ * Ans: I am going to save the response in React State 
+
+ * 2. What action from the user should trigger getting the recipe?
+ * When the user clicks the get receipe button 
+ */
